@@ -6,7 +6,7 @@ const $ = new Env('京东京喜工厂自动开团');
 const JD_API_HOST = 'https://m.jingxi.com';
 const fs = require('fs');
 const notify = $.isNode() ? require('./sendNotify') : '';
-let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭通知推送
+let jdNotify = false;//是否关闭通知，false打开通知推送，true关闭通知推送
 const tuanActiveId = `gaVXW_NJ0KPEA2LyUhoXzA==`;
 let cookiesArr = [], cookie = '', message = '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
